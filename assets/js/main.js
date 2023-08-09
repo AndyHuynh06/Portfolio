@@ -72,7 +72,28 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
+// typer
+const text = document.querySelector(".sec-text");
+        
+const textLoad = () =>{
+    setTimeout(()=>{
+        text.textContent = "Andy";
+    }, 0);
+    setTimeout(()=>{
+        text.textContent = "a student";
+    }, 3200);
+    setTimeout(()=>{
+        text.textContent = "a coder";
+    }, 6400);
+}
+
+textLoad();
+setInterval(textLoad, 9600)
+
+
 /*=============== DARK LIGHT THEME ===============*/ 
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+
