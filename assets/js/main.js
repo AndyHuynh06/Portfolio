@@ -100,11 +100,26 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 2500,
     delay: 400,
+    //reset: true,
 })
 
 sr.reveal(`.home__perfil, .about__image, .contact__mail`, {origin: 'right'})
 sr.reveal(`.home__name, .home__info,
-        .about__container .section__title-1, .about__info,
+        .section__title-1,
         .contact__social, .contact__data`, {origin: 'left'})
 sr.reveal(`.services__card, .projects__card`, {interval: 100})
 
+// ----------------------about menu-----------------
+
+const tabs= document.querySelectorAll('.tab_btn');
+const all_content = document.querySelectorAll('.about__info');
+
+tabs.forEach((tab,index)=>{
+    tab.addEventListener('click', (e)=>{
+        tabs.forEach(tab=>{tab.classList.remove('active_tab')})
+        tab.classList.add('active_tab')
+
+    all_content.forEach(content=>{content.classList.remove('active_tab')})
+    all_content[index].classList.add('active_tab');
+    })
+})
