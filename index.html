@@ -1,508 +1,188 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhysicsBuddy</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+<body class="home">
+  <section class="header">
+    <video autoplay loop muted plays-inline class=back-video>
+      <source src="images/background-video.mp4" type="video/mp4">
+    </video>
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <span class="material-symbols-outlined" id="close" onclick="hideMenu()">close</span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="booklet.html">Ultimate formula booklet</a></li>
+          <li><a href="recommended.html">Recommended resources</a></li>
+          <li><a href="revisionvillageclone/revisionvillage.html">RevisionVillage</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          
+        </ul>
+      </div>
+      <span class="material-symbols-outlined" id="menu" onclick="showMenu()">menu</span>
+    </nav>
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+    <div class="text-box">
+      <h1>Welcome to PhysicsBuddy</h1>
+      <p>PhysicsBuddy: Ace Your Physics Journey!</p>
+      <a href="booklet.html" class="hero-btn">Go to "Physics formula booklet"</a>
+    </div>
+  </section>
 
-      <title>Responsive portfolio website Rian - Bedimcode</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">
-               <span class="nav__logo-circle">A</span>
-               <span class="nav_logo-name">Andy.</span>
-            </a>
-            <div class="nav__menu" id="nav-menu">
-               <span class="nav__title">Menu</span>
-               <h3 class="nav__name">Rian</h3>
-
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link active-link" id="home-color">Home</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link" id="about-color">About me</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#projects" class="nav__link" id="project-color">Projects</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#contact" class="nav__link-button" id="contact-color">Contact Me</a>
-                  </li>
-               </ul>
-               <!-- close button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
-            </div>
-            <div class="nav__buttons">
-               <!-- Theme butotn -->
-               <!-- Toggle button -->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-4-line"></i>
-               </div>
-            </div>
-         </nav>
-      </header>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section section__home" id="home">
-            <div class="home__container container grid">
-               <h1 class="home__name">
-                  <span class="text first-text">I'm </span><br>
-                  <span class="text sec-text"> a student</span>
-               </h1>
-
-               <div class="home__perfil">
-                  <div class="home__image">
-                     <img src="assets/img/image_large(3).png" alt="image" class="home__img">
-                     <div class="home__shadow"></div>
-
-                     <img src="assets/img/curved-arrow1.png" alt="" class="home__arrow">
-                     <img src="assets/img/random-lines(4).png" alt="" class="home__line">
-                  
-                     <div class="geometric-box"></div>
-                  </div>
-
-                  <div class="home__social">
-                     <a href="#" target="_blank" class="home__social-link ig" id="ig">
-                        <i class="ri-instagram-line"></i>
-                     </a>
-
-                     <a href="#" target="_blank" class="home__social-link fb" id="fb">
-                        <i class="ri-facebook-line"></i>
-                     </a>
-
-                     <a href="#" target="_blank" class="home__social-link git" id="git">
-                        <i class="ri-github-fill"></i>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="home__info">
-                  <p class="home__description">
-                     <b>I'm Andy</b>, a student/newbie programmer 
-                     with knowledge in app, web development and designing.  
-                     I do programming for fun and love pixel art! 
-                     
-                  </p>
-
-                  <a href="#about" class="home__scroll">
-                     <div class="home__scroll-box">
-                        <i class="ri-arrow-down-s-line"></i>
-                     </div>
-
-                     <span class="home__scroll-text">Scroll Down</span>
-                  </a>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== ABOUT ====================-->
-         <!-- <section class="about section" id="about">
-            <div class="about__container container grid">
-               <h2 class="section__title-1">
-                  About me.
-               </h2>
-
-               <div class="about__perfil">
-                  <div class="about__image">
-                     <img src="assets/img/image_large(3).png" alt="image" class="about__img">
-                     <div class="geometric-box"></div>
-                     <img src="assets/img/random-lines(4).png" alt="" class="about__line">
-                  </div>
-               </div>
-               <div class="about__info">
-                  <p class="about__description">
-                     Passionate about creating unique<b>Application</b> with 
-                     <b>pixel art User Interface</b>, I have few projects
-                     and art work. If you want a custom pixel art wallpaper,
-                     please contact me!
-                  </p>
-
-                  <ul class="about__list">
-                     <li class="about__item">
-                        <b>My Skills Are:</b> Python, Java, HTML, 
-                        CSS, JavaScript & Pixel Art design
-                     
-                     </li>
-                  </ul>
-
-                  <div class="about__buttons">
-                     <a href="#contact" class="button">
-                        <i class="ri-send-plane-line"></i> Contact Me
-                     </a>
-
-                     <a href="" class="button__ghost" target="_blank">
-                        <img src="assets/img/facebook(2).png" class="icon-image">
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </section> -->
-
-         <section class="about section" id="about">
-            <div class="about__container container">
-               <h2 class="section__title-1">
-                  <span>About me</span>
-               </h2>
-               <div class="about__content">
-                  <div class="about__designer">
-                     <div class="about__info">
-                        <h2 class="about__titles">designer</h2>
-                        
-                        <p class="about__description">
-                           I'm passionate about pixel artistry, where each pixel weaves stories and nostalgia into captivating visual experiences.
-                        </p>
-                     </div>
-                     <div class="about__info">
-                        <h2 class="about__titles">education</h2>
-                        
-                        <p class="about__description">
-                           I'm passionate about pixel artistry, where each pixel weaves stories and nostalgia into captivating visual experiences.
-                        </p>
-                     </div>
-                     <div class="about__info">
-                        <h2 class="about__titles">skill</h2>
-                        
-                        <p class="about__description">
-                           I'm passionate about pixel artistry, where each pixel weaves stories and nostalgia into captivating visual experiences.
-                        </p>
-                     </div>
-                  </div>
-                  <div class="about__coder">
-                     <div class="about__info">
-                        <h2 class="about__titles">&lt;coder&gt;</h2>
-                        
-                        <p class="about__description">
-                           I'm a passionate coder, committed to enhancing daily life through creative digital solutions and innovative approaches.
-                        </p>
-
-                     </div>
-                  </div>
-               </div>
-               <div class="about__image">
-                  <img src="assets/img/about_image.png">
-               </div>
-               <div class="tab_box">
-                  <button class="tab_btn active_tab">General</button>
-                  <button class="tab_btn">Education</button>
-                  <button class="tab_btn">General</button>
-              </div>
-            </div>   
-         </section>
-
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
-            <h2 class="section__title-2">
-               <span>Services.</span>
-            </h2>
-
-            <div class="services__container container grid">
-               <article class="services__card">
-                  <div class="services__border"></div>
-
-                  <div class="services__content">
-                     <div class="services__icon">
-                        <div class="services__box"></div>
-                        <i class="ri-layout-2-line"></i>
-                     </div>
-                  
-                     <h2 class="services__title" id="web-service">App development</h2>
-
-                     <p class="services__description">
-                        "Crafting unique apps with user-friendly interfaces, 
-                        seamless functionality, and a focus on delivering an 
-                        intuitive and enjoyable experience for every user.
-                     </p>
-                  </div>
-               </article>
-
-               <article class="services__card">
-                  <div class="services__border"></div>
-
-                  <div class="services__content">
-                     <div class="services__icon">
-                        <div class="services__box"></div>
-                        <i class="ri-code-line"></i>
-                     </div>
-                  
-                     <h2 class="services__title" id="dev-service">Web development</h2>
-
-                     <p class="services__description">
-                        "Creating dynamic websites with seamless navigation, 
-                        responsive designs, and a commitment to providing users 
-                        with an intuitive and engaging online journey.
-                     </p>
-                  </div>
-               </article>
-
-               <article class="services__card">
-                  <div class="services__border"></div>
-
-                  <div class="services__content">
-                     <div class="services__icon">
-                        <div class="services__box"></div>
-                        <i class="ri-smartphone-line"></i>
-                     </div>
-                  
-                     <h2 class="services__title" id="mobile-service">Physics helper</h2>
-
-                     <p class="servies__description">
-                        Offering fellow students a helping hand in physics, 
-                        providing clear explanations and guidance to enhance 
-                        understanding and success in their coursework.
-                     </p>
-                  </div>
-               </article>
-            </div>
-         </section>
-
-         <!--==================== PROJECTS ====================-->
-         <section class="projects section" id="projects">
-            <h2 class="section__title-1">
-               <span>Projects.</span>
-            </h2>
-
-            <div class="projects__container container grid">
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/project1.png" alt="image" class="projects__img">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Application</h3>
-                     <h2 class="projects__title">Handcut</h2>
-
-                     <p class="projects__description">
-                        Amplify your productivity by seamlessly 
-                        performing a range of computer functions 
-                        and shortcuts through simple and intuitive
-                        hand gestures.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="#" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
-                     </a>
-
-                     <a href="#" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </a>
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/project2.png" alt="image" class="projects__img">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Application</h3>
-                     <h2 class="projects__title">EverywhereDictionary</h2>
-
-                     <p class="projects__description">
-                        Eliminate interruptions. Use 
-                        Everywhere Dictionary to effortlessly look up words 
-                        from everywhere by just highlighting and clicking a shortcut.
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="#" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
-                     </a>
-
-                     <a href="#" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </a>
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/project3.jpg" alt="image" class="projects__img">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Website</h3>
-                     <h2 class="projects__title">PhysicsBuddy</h2>
-
-                     <p class="projects__description">
-                        PhysicsBuddy assists fellow IB Physics students
-                         with a comprehensive annotated formula booklet, 
-                         and a supportive community for questions.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="#" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
-                     </a>
-
-                     <a href="#" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </a>
-                  </div>
-               </article>
-            </div>
-         </section>
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            <div class="contact__container grid">
-               <div class="contact__data">
-                  <h2 class="section__title-2">
-                     <span>Contact Me.</span>
-                  </h2>
-               
-                  <p class="contact__description-1">
-                     I will read all emails. Send me any 
-                     message you want and I'll get back to you.
-                  </p>
-   
-                  <p class="contact__description-2">
-                     I need your <b>Name</b> and <b>Email Address</b>, but 
-                     you won't receive anything other than your reply.
-                  </p>
-                  
-                  <div class="geometric-box"></div>
-               </div>
-            
-               <div class="contact__mail">
-                  <h2 class="contact__title">
-                     Send Me A Message
-                  </h2>
-   
-                  <form action="" class="contact__form" id="contact-form">
-                     <div class="contact__group">
-                        <div class="contact__box">
-                           <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Name">
-                           <label for="name" class="contact__label">Name</label>
-                        </div>
-   
-                        <div class="contact__box">
-                           <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
-                           <label for="email" class="contact__label">Email Address</label>
-                        </div>
-                     </div>
-   
-                     <div class="contact__box">
-                        <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
-                        <label for="subject" class="contact__label">Subject</label>
-                     </div>
-   
-                     <div class="contact__box contact__area">
-                        <textarea name="user_message" id="message"  class="contact__input" required placeholder="Message"></textarea>
-                        <label for="name" class="contact__label">Message</label>
-                     </div>
-   
-                     <button type="submit" class="contact__button button">
-                        <i class="ri-send-plane-line"></i> Send Message
-                     </button>
-                  </form>
-               </div>
-            
-               <div class="contact__social">
-                  <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
-                  
-                  <div class="contact__social-data">
-                     <div>
-                        <p class="contact__social-description-1">
-                           Does not send me email
-                        </p>
-   
-                        <p class="contact__social-description-2">
-                           Write me on my social networks
-                        </p>
-                     </div>
-   
-                     <div class="contact__social-links">
-                        <a href="#" class="contact__social-link">
-                           <i class="ri-instagram-line"></i>
-                        </a>
-   
-                        <a href="#" class="contact__social-link">
-                           <i class="ri-instagram-line"></i>
-                        </a>
-   
-                        <a href="#" class="contact__social-link">
-                           <i class="ri-instagram-line"></i>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-      </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer__container container grid">
-            <ul class="footer__links">
-               <li>
-                  <a href="#about" class="footer__link">About</a>
-               </li>
-
-               <li>
-                  <a href="#services" class="footer__link">Services</a>
-               </li>
-
-               <li>
-                  <a href="#projects" class="footer__link">Projects</a>
-               </li>
+  <div class="about">
+    <div class="container">
+      <div class="row2">
+        <div class="about-col-1">
+          <img src="images/aboutusimages.png" class="user">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About us</h1>
+          <p>Empowering IB Physics students with confidence and excellence, PhysicsBuddy envisions a dynamic
+            online platform where knowledge meets camaraderie. Our vision is to be the go-to companion, fostering a
+            supportive learning community where students thrive through personalized guidance, interactive resources,
+            and student-expert insights. With passion for physics at our core, we aspire to propel students beyond their
+            potential, equipping them to conquer the challenges of the IB Physics program and excel in their academic
+            journey.</p>
+          <div class=tab-titles>
+            <p class="tab-links active-link" onclick="opentab('andy')">Andy</p>
+            <p class=tab-links onclick="opentab('ben')">Ben</p>
+          </div>
+          <div class="tab-contents active-tab" id="andy">
+            <ul>
+              <li><span>Status:</span><br>Available</li>
+              <li><span>Email:</span><br>huy.b.huynh0724@ais.edu.vn</li>
+              <li><span>Facebook:</span><br><a href="https://www.facebook.com/bahuy.huynh.94?mibextid=ZbWKwL">Andy Huynh</a></li>
             </ul>
+          </div>
+          <div class="tab-contents" id="ben">
+            <ul>
+              <li><span>Status:</span><br>Unavailable</li>
+              <li><span>Email:</span><br></li>phu.h.xin002@ais.edu.vn
+              <li><span>Facebook:</span><br>Ben Xin</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <span class="footer__copy">
-               &#169; All Rights Reserved By
-               <a href="">Bedimcode.</a>
-            </span>
-         </div>
-      </footer>
+  <hr>
 
-      <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-s-line"></i>
-      </a>
+  <section class="contents">
+    <h1>What can we help?</h1>
+    <p>PhysicsBuddy: Ace Your Physics Journey!</p>
+    <div class="row1">
+      <div class="content-col">
+        <i class="fa-regular fa-newspaper"></i>
+        <h3>
+          Ultimate Formula booklet
+        </h3>
+        <p>
+          This is a full annotated formula booklet,
+          containing notes that we find helpful. Feel free to share any recommendation!
+        </p>
+        <a href="booklet.html">Go to "Ultimate Formula Booklet"</a>
+      </div>
+      <div class="content-col">
+        <i class="fa-regular fa-thumbs-up"></i>
+        <h3>
+          Recommended resources
+        </h3>
+        <p>
+          This contains all the helpful resouces for revision/other websites to help you. Feel free to recommend us some
+          more!
+        </p>
+        <a href="recommended.html">Go to "Recommended resources"</a>
+      </div>
+      <div class="content-col">
+        <i class="fa-regular fa-comment"></i>
+        <h3>
+          Want to ask a question?
+        </h3>
+        <p>
+          "There's no such thing as a stupid question". We are always here to help you with hard problems, click the
+          link below to contact us!
+        </p>
+        <a href="contact.html">Go to "Contact"</a>
+      </div>
+    </div>
+  </section>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="assets/js/scrollreveal.min.js">
+  <!-- ---------footer------- -->
+  <section class="footer">
+    <div class="footerContainer">
+      <h4>PhysicsBuddy: Ace Your Physics Journey!</h4>
+      <div class="footerNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="booklet.html">Ultimate formula booklet</a></li>
+          <li><a href="recommended.html">Recommend resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100094756256092"><i class="fa fa-brands fa-facebook"></i></a>
+        <a href="mailto:huy.b.huynh0724@ais.edu.vn"><i class="fa fa-solid fa-envelope"></i></a>
+      </div>
+      <div class="footerBottom">
+        <p>Copyright &copy;2023; Made by <span class=Designer>DP2 students</span></p>
+      </div>
+      <div class="visitorcounter">
+        <a href='http://www.freevisitorcounters.com'>freevisitorcounters</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=5e6d966fc996cba72faccb5f304ceac6efbb756e'></script>
+        <script type="text/javascript" src="https://freevisitorcounters.com/en/home/counter/1073652/t/0"></script>
+      </div>
+    </div>
+  </section>
+<script src="script.js"></script>
+
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "101465626374786");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v17.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
 
-      </script>
-      
-      <!--=============== EMAIL JS ===============-->
-      
+</body>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
 </html>
